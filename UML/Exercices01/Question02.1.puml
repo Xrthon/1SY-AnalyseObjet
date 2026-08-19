@@ -1,0 +1,19 @@
+@startuml 
+
+left to right direction 
+
+
+actor Membre 
+
+rectangle "Bibliotheque"{
+    usecase "Emprunter\n--\n **extension points** \n Reserver Livre" as UC1
+    usecase "Reserver" as UC2
+    usecase "Authentifier" as UC3
+}
+
+
+Membre --> UC1
+UC1 <.. UC2 : <<Extend>>
+UC1 --> UC3 : <<Include>>
+
+@enduml

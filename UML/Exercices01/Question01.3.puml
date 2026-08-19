@@ -1,0 +1,16 @@
+@startuml 
+left to right direction 
+
+actor Pompiste
+actor Client 
+rectangle "Petro Shawi"{
+    usecase "Prendre essence" as UC1
+    usecase "Enregistrer paiement" as UC2
+}
+
+
+Client  <|- Pompiste
+Client --> UC1
+Pompiste --> UC2
+
+@enduml

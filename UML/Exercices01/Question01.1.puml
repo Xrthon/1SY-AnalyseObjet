@@ -1,0 +1,13 @@
+@startuml
+
+left to right direction 
+
+actor Client
+
+rectangle "Petro Shawi" { 
+    usecase "Mettre essence" as UC1
+}
+
+Client --> UC1
+
+@enduml
